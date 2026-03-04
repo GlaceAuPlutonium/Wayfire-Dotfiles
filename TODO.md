@@ -13,9 +13,9 @@ Must do :
 - Clipboard still kinda goofy sometimes wont paste for no fucking reasons
 
 - Yazi plugins, check starship.yazi
-- Check augment-command.yazi
-- Check a clipboard plugin (maybe)
-- Check sudo
+- - Check augment-command.yazi
+- - Check a clipboard plugin (maybe)
+- - Check sudo
 
 - In-depth configuration of ZSH
 - In-depth configuration of Antidote and plugins
