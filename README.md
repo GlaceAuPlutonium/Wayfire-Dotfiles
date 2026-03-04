@@ -18,4 +18,8 @@ This repository isn't only for the dotfiles, I also keep track of what I have to
 
 [UPDATES.md](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/UPDATES.md)
 
+
+
+Lots of elements from [blueyt's dotfiles](https://github.com/bluebyt/Wayfire-dots), thanks to him for his amazing work.
+
 ## 🚧 This page is still being built. 🚧
