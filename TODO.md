@@ -26,10 +26,7 @@ Must do :
 
 EWW basically perfect, modify if needed
 Fastfetch is done, modify if needed
-Waybar is done, modify if needed -- (well no stupid workspaces css aint working)(using python rn)
-but its a pain in the ass, basically waybar css needs to update when changing workspace
-would propably be better of by using a dedicatd shell ie. eww, ags, axshell, quickshell etc
-So now I'm settled it'll be AGS
+Waybar is done, modify if needed (well no stupid workspaces css aint working)(using python rn) but its a pain in the ass, basically waybar css needs to update when changing workspace, would propably be better of by using a dedicatd shell ie. eww, ags, axshell, quickshell etc. So now I'm settled it'll be AGS
 
 Lite-XL is (almost) done, modify if needed
 Kitty is done (?), modify if needed
