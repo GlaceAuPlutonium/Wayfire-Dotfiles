@@ -24,6 +24,10 @@ This repository isn't only for the dotfiles, I also keep track of what I have to
 
 ### Important
 
-Lots of elements come from [blueyt's dotfiles](https://github.com/bluebyt/Wayfire-dots), thanks to him for his amazing work.
+There won't be any example/showcase images until I properly set up a way to take screenshots. Until then, this page will remain a blank and sad wall of text (I mean you can still use the dots if you're curious).
+
+<ins> **Videos and GIFs showcases are ruled out.**</ins> The machine I'm currently using doesn't have the necessary power (crappy celeron) to record the screen, unless its like 360p, and there's no point in doing that.
+
+Lots of elements in this project come from [blueyt's dotfiles](https://github.com/bluebyt/Wayfire-dots), thanks to him for his amazing work.
 
 ## 🚧 This page is still being built. 🚧
