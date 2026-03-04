@@ -40,6 +40,8 @@ If in the mood :
 
 - A system tray could be useful
 
+- PixDecor but check out blueyt's install process
+
 - Get fucking nuts and do that stupid custom animation on bootup
 
 - Some way to type emojis (halfway through cuz it's janky for now)
