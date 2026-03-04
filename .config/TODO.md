@@ -2,21 +2,18 @@ Must do :
 
 - Autosave screenshots (automatically, saves in desktop from swappy)
 
-- Backlight values inverted (hardware "problem") (0% for bright and 100% for screen turned off)
-  Sometimes for no fucking reasons it turns off at 0%
+- Backlight values inverted (hardware "problem") (0% for bright and 100% for screen turned off). Sometimes for no fucking reasons it turns off at 0%
 
-- Lite-XL usually shitting itself when copying big amounts of text then crashes
-  Lite-XL choking on itself when rendering lots of text
+- Lite-XL usually shitting itself when copying big amounts of text then crashes. Lite-XL choking on itself when rendering lots of text
 
-- Emojis not typing in from rofimoji :upside_down_face:
-  Neither with wofi-emoji btw
+- Emojis not typing in from rofimoji :upside_down_face: Neither with wofi-emoji btw
 
 - Clipboard still kinda goofy sometimes wont paste for no fucking reasons
 
 - Yazi plugins, check starship.yazi
--- Check augment-command.yazi
--- Check a clipboard plugin (maybe)
--- Check sudo
+- Check augment-command.yazi
+- Check a clipboard plugin (maybe)
+- Check sudo
 
 - In-depth configuration of ZSH
 - In-depth configuration of Antidote and plugins
@@ -40,9 +37,7 @@ If a program isn't using tokyo-night theme, change it
 
 If in the mood :
 
-- Look for audio visualiser / music player ie. ncmpcpp with Cava/Xava (where to put it ??)
-  Also check out things like Tauon Music Box, Lollypop or Amberol
-  But if I do I don't know where tf I'd but it
+- Look for audio visualiser / music player ie. ncmpcpp with Cava/Xava (where to put it ??). Also check out things like Tauon Music Box, Lollypop or Amberol. But if I do I don't know where tf I'd but it
 
 - A system tray could be useful
 
@@ -50,10 +45,7 @@ If in the mood :
 
 - Some way to type emojis (halfway through cuz it's janky for now)
 
-- Yeah so ags for the bars (top/side), need to install it (please don't be a fucker and use the astal/ags doc, not agsv1 doc)
-  The point of it is to replace Waybar/EWW under a same app (and allow me to have a reactive topbar apperance when changing workspace)
-  And also could allow me to have cool deploying pannels with like xava or idk could be neat
-  and what if using wf-shell for top bar ?
+- Yeah so ags for the bars (top/side), need to install it (please don't be a fucker and use the astal/ags doc, not agsv1 doc). The point of it is to replace Waybar/EWW under a same app (and allow me to have a reactive topbar apperance when changing workspace). And also could allow me to have cool deploying pannels with like xava or idk could be neat. and what if using wf-shell for top bar ?
 
 - Clipboard manager ie. Clipse, annoying af (or just have a clipboard manager I guess)
 
