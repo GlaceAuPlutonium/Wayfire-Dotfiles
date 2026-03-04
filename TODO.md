@@ -1,4 +1,4 @@
-🔨 All the things that must be done / bugs that must be fixed. 🔨
+## 🔨 All the things that must be done / bugs that must be fixed. 🔨
 
 Must do :
 
