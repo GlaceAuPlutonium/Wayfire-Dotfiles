@@ -23,14 +23,14 @@ This repository isn't only for the dotfiles, I also keep track of what I have to
 ## Main things (?)
 - Distro : [Void Linux](https://voidlinux.org/) // Independent lightweight, systemd-free, musl-compatible, stable rolling-release GNU/Linux distribution based on the XBPS package manager.
 - WM : [Wayfire](https://wayfire.org/) // Wayfire is a 3D Wayland compositor.
-- Bar : [Waybar](https://github.com/Alexays/Waybar) // A highly customisable bar for wlroots-based compositors.
+- Bar : [Waybar](https://github.com/Alexays/Waybar) // Highly customisable bar for wlroots-based compositors.
 - Sidebar : [Elkowar's Wacky Widgets](https://github.com/elkowar/eww) // Cool widget system written in Rust that allows you to make your own widgets.
-- Terminal : [kitty](https://github.com/kovidgoyal/kitty) // A fast, feature-rich, GPU-based terminal.
-- Shell : [ZSH](https://www.zsh.org/) // A powerful shell. (sorry the official site is ugly af)
-- Launcher : [Wofi](https://github.com/SimplyCEO/wofi) // A launcher/menu program for wlroots-based Wayland compositors.
-- File Explorer : [Yazi](https://yazi-rs.github.io/) // A blazing fast, terminal-based file explorer written in Rust.
-- Notifications : [Mako](https://github.com/emersion/mako) // A lightweight notification daemon for Wayland.
-- Theme : [TokyoNight](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) // A really nice dark theme for GTK apps with overall purple/dark-blue tints.
+- Terminal : [kitty](https://github.com/kovidgoyal/kitty) // Fast, feature-rich, GPU-based terminal.
+- Shell : [ZSH](https://www.zsh.org/) // Powerful shell. (sorry the official site is ugly af)
+- Launcher : [Wofi](https://github.com/SimplyCEO/wofi) // Launcher/menu program for wlroots-based Wayland compositors.
+- File Explorer : [Yazi](https://yazi-rs.github.io/) // Blazing fast, terminal-based file explorer written in Rust.
+- Notifications : [Mako](https://github.com/emersion/mako) // Lightweight notification daemon for Wayland.
+- Theme : [TokyoNight](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) // Really nice dark theme for GTK apps with overall purple/dark-blue tints.
 - Font : [Caskaydia Code](https://www.nerdfonts.com/font-downloads) // A fun, monospaced Nerd Font
 
 
