@@ -1,0 +1,113 @@
+[mgr]
+show_hidden = true
+show_symlink = true
+sort_by = "alphabetical"
+sort_dir_first = true
+
+[preview]
+image_delay = 50
+image_filter = "catmull-rom"
+wrap = "yes"
+
+
+[opener]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+  ]
+  
+edit = [
+	{ run = 'lite-xl "$@"', block = true, for = "unix" },
+	]
+
+image = [
+	{ run = 'imv "$@"', orphan = true, desc = "Image Viewer", for = "unix" },
+  ]
+
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open" },
+	]
+
+my-fallback = [
+	{ run = 'lite-xl "$@"', block = true, for = "unix" },
+	]
+
+[open]
+prepend_rules = [
+#TEXT
+	{ name = "*.txt", use = "edit" },
+	{ name = "*.md", use = "edit" },
+	{ name = "*.rst", use = "edit" },
+	{ name = "*.log", use = "edit" },
+	{ name = "*.csv", use = "edit" },
+	{ name = "*.tsv", use = "edit" },
+	{ name = "*.org", use = "edit" },
+
+#CONFIG
+	{ name = "*.ini", use = "edit" },
+	{ name = "*.cfg", use = "edit" },
+	{ name = "*.conf", use = "edit" },
+	{ name = "*.json", use = "edit" },
+	{ name = "*.jsonc", use = "edit" },
+	{ name = "*.toml", use = "edit" },
+	{ name = "*.yaml", use = "edit" },
+	{ name = "*.yml", use = "edit" },
+
+# SPECIFIC LANGUAGES
+	{ name = "*.css", use = "edit" },
+	{ name = "*.scss", use = "edit" },
+	{ name = "*.yuck", use = "edit" },
+	{ name = "*.py", use = "edit" },
+	{ name = "*.html", use = [ "open", "edit" ] },
+	{ name = "*.lua", use = "edit" },
+	{ name = "*.css", use = "edit" },
+	{ name = "*.xml", use = "edit" },
+	{ name = "*.sh", use = "edit" },
+
+# IMAGES
+	{ url = "*.jpg", use = "image" },
+	{ url = "*.jpeg", use = "image" },
+	{ url = "*.png", use = "image" },
+	{ url = "*.gif", use = "image" },
+	{ url = "*.bmp", use = "image" },
+	{ url = "*.tiff", use = "image" },
+	{ url = "*.webp", use = "image" },
+	{ url = "*.svg", use = "image" },
+	{ url = "*.psd", use = "image" },
+	{ url = "*.xcf", use = "image" },
+
+#VIDEOS
+	{ name = "*.mp4", use = "play" },
+	{ name = "*.mkv", use = "play" },
+	{ name = "*.avi", use = "play" },
+	{ name = "*.mov", use = "play" },
+	{ name = "*.flv", use = "play" },
+	{ name = "*.wmv", use = "play" },
+	{ name = "*.webm", use = "play" },
+	{ name = "*.mpg", use = "play" },
+	{ name = "*.mpeg", use = "play" },
+	{ name = "*.m4v", use = "play" },
+	{ name = "*.mts", use = "play" },
+	{ name = "*.m2ts", use = "play" },
+	{ name = "*.ts", use = "play" },
+	{ name = "*.3gp", use = "play" },
+	{ name = "*.3g2", use = "play" },
+	{ name = "*.vob", use = "play" },
+
+# AUDIOS
+	{ name = "*.mp3", use = "play" },
+	{ name = "*.wav", use = "play" },
+	{ name = "*.ogg", use = "play" },
+	{ name = "*.flac", use = "play" },
+	{ name = "*.aac", use = "play" },
+	{ name = "*.m4a", use = "play" },
+	{ name = "*.opus", use = "play" },
+
+
+	# Multiple openers for a single rule
+]
+
+append_rules = [
+	{ name = "*", use = "my-fallback" },
+]
+
+# reminder : don't use the "rules" section else yazi's native archiver aint working

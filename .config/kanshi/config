@@ -1,0 +1,10 @@
+profile docked {
+    output HDMI-A-1 enable
+    output eDP-1 disable
+    exec eww reload
+}
+
+profile undocked {
+    output eDP-1 enable
+    exec eww reload
+}
