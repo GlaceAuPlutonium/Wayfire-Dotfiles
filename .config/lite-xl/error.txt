@@ -1,0 +1,28 @@
+Error: /usr/share/lite-xl/core/tokenizer.lua:270: attempt to compare number with nil
+
+stack traceback:
+	/usr/share/lite-xl/core/tokenizer.lua:270: in function 'core.tokenizer.tokenize'
+	/usr/share/lite-xl/core/doc/highlighter.lua:108: in upvalue 'prev_tokenize_line'
+	/home/gap/.config/lite-xl/plugins/minimap.lua:263: in function 'core.doc.highlighter.tokenize_line'
+	/usr/share/lite-xl/core/doc/highlighter.lua:117: in function 'core.doc.highlighter.get_line'
+	/usr/share/lite-xl/core/docview.lua:444: in function </usr/share/lite-xl/core/docview.lua:440>
+	(...tail calls...)
+	/home/gap/.config/lite-xl/plugins/bracketmatch.lua:236: in upvalue 'draw_line_text'
+	/home/gap/.config/lite-xl/plugins/colorpreview.lua:74: in function </home/gap/.config/lite-xl/plugins/colorpreview.lua:73>
+	(...tail calls...)
+	/home/gap/.config/lite-xl/plugins/selectionhighlight.lua:20: in function 'core.docview.draw_line_body'
+	/usr/share/lite-xl/core/docview.lua:587: in upvalue 'old_draw'
+	/usr/share/lite-xl/plugins/linewrapping.lua:529: in function 'core.docview.draw'
+	...	(skipping 9 levels)
+	/home/gap/.config/lite-xl/libraries/widget/init.lua:1468: in upvalue 'root_view_draw'
+	...p/.config/lite-xl/plugins/plugin_manager/plugin_view.lua:66: in upvalue 'draw'
+	/usr/share/lite-xl/plugins/autocomplete.lua:598: in upvalue 'root_view_draw'
+	/usr/share/lite-xl/plugins/contextmenu.lua:32: in upvalue 'root_view_draw'
+	/usr/share/lite-xl/plugins/treeview.lua:497: in function 'core.rootview.draw'
+	/usr/share/lite-xl/core/init.lua:1356: in function 'core.step'
+	/usr/share/lite-xl/core/init.lua:1416: in upvalue 'core_run'
+	/home/gap/.config/lite-xl/plugins/settings.lua:1896: in function 'core.run'
+	(...tail calls...)
+	[string "local core..."]:14: in function <[string "local core..."]:6>
+	[C]: in function 'xpcall'
+	[string "local core..."]:6: in main chunk

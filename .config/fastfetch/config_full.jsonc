@@ -1,0 +1,144 @@
+// ~/.config/fastfetch/config.jsonc
+// See https://github.com/fastfetch-cli/fastfetch/wiki/Configuration for more details
+// See *.jsonc in https://github.com/fastfetch-cli/fastfetch/tree/dev/presets/examples for more examples
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/void",
+    "color": {
+      "1": "green"
+    },
+    "type": "file",
+    "padding": {
+      "top": 2,
+      "left": 4,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": "    "
+  },
+  "modules": [
+    "break",
+
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    },
+    {
+      "type": "os",
+      "key": "  ",
+      "keyColor": "green"
+    },
+    {
+      "type": "kernel",
+      "key": "  ",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "packages",
+      "key": "  ",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "terminal",
+      "key": "  ",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "terminalfont",
+      "key": "  ",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "shell",
+      "key": "  ",
+      "keyColor": "yellow"
+    },
+    "break",
+    {
+      "type": "wm",
+      "key": "  󰍹",
+      "keyColor": "blue"
+    },
+    {
+      "type": "theme",
+      "key": "  󰉼",
+      "keyColor": "blue"
+    },
+    {
+      "type": "icons",
+      "key": "  󰀻",
+      "keyColor": "blue"
+    },
+    {
+      "type": "font",
+      "key": "  󰛖",
+      "keyColor": "blue"
+    },
+    {
+      "type": "cursor",
+      "key": "  󰆿",
+      "keyColor": "blue"
+    },
+    "break",
+    {
+      "type": "host",
+      "key": "  ",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "cpu",
+      "key": "  ",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "gpu",
+      "key": "  󱤓",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "memory",
+      "key": "  ",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "swap",
+      "key": "  ",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "disk",
+      "key": "  ",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "localip",
+      "key": "  󱦂",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "battery",
+      "key": "  ",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "locale",
+      "key": "  ",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "custom",
+      "format": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    },
+    "break",
+    {
+      "type": "uptime",
+      "key": "Uptime",
+      "keyColor": "magenta"
+    },
+    "break",
+    "colors",
+    "break"
+  ]
+}

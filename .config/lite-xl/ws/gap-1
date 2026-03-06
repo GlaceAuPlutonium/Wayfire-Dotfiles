@@ -1,0 +1,1 @@
+return { path = "/home/gap", documents = {["views"]={[1]={["scroll"]={["y"]=0,["x"]=0},["text"]=false,["filename"]=".config/TODO.md",["active"]=true,["type"]="doc",["selection"]={[1]=19,[2]=31,[3]=19,[4]=31}}},["type"]="leaf",["active_view"]=1}, directories = {} }
