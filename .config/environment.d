@@ -1,0 +1,1 @@
+/home/gap/.config/environment.d
