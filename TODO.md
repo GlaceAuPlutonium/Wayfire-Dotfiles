@@ -9,6 +9,8 @@ Must do :
 - Lite-XL usually shitting itself when copying big amounts of text then crashes. Lite-XL choking on itself when rendering lots of text
 
 - Begin work with Quickshell to replace Waybar/EWW
+- - Waybar : Everything
+- - EWW : Haven't started yet
 
 - Create symlinks to ~/dotfiles for better Github repository management
   
@@ -53,6 +55,8 @@ If in the mood :
 - Some way to type emojis (halfway through cuz it's janky for now)
 
 - Slight transparency on unused apps (see blueyt's setup)
+
+- A sound when a device is plugged in
 
 - Yeah so ags for the bars (top/side), need to install it (please don't be a fucker and use the astal/ags doc, not agsv1 doc). The point of it is to replace Waybar/EWW under a same app (and allow me to have a reactive topbar apperance when changing workspace). And also could allow me to have cool deploying pannels with like xava or idk could be neat. and what if using wf-shell for top bar ?
 

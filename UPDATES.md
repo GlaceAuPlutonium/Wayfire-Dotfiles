@@ -8,3 +8,8 @@
 - Downgraded freetype to 2.14.1_1 due to rendering problem in Lite-XL
 - Created symlinks towards ~/dotfiles for easier management
 - Installed Quickshell to start replacing Waybar and EWW
+
+08 March 2026
+- Started working on Quickshell to replace Waybar
+- Added new wallpapers
+- Added install scripts
