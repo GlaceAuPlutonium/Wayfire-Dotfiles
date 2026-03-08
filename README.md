@@ -40,6 +40,29 @@ This repository isn't only for the dotfiles, I also keep track of what I have to
 
 ## Important
 
+### Install scripts
+Don't blindly run every install scripts, you probably don't need them.  
+
+[01-install-packages.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/01-install-packages.sh) Don't run this one unless you want to install a lot of packages that you may not need.  
+
+[02-install-extras.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/02-install-extras.sh) Run this script if you want to install some extras on your system, which are :  
+- Tokyonight GTK Theme (GTK theme)
+- MoreWaita Icon Theme (icon theme)
+- Phinger Cursors Theme (cursor theme)
+- SDDM Astronaut Theme in Hyprland_Kath configuration (custom SDDM theme)
+- Antidote (for ZSH)
+- CyberGRUB-2077 (custom GRUB boot menu)
+
+[03-copy-config.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/03-copy-config.sh) This is what you need if all you care about are the dots. In additon to copying .config, it will also copy :
+- Wallpapers
+- .icons
+- .local/share/fonts/CaskaydiaCove
+- .zshrc and .zsh_plugins.txt
+
+Feel free to edit the scripts if there are things you don't want to install.
+
+### Showcase
+
 There won't be any example/showcase images until I properly set up a way to take screenshots. Until then, this page will remain a blank and sad wall of text (I mean you can still use the dots if you're curious).
 
 <ins> **Videos and GIFs showcases are ruled out.**</ins> The machine I'm currently using doesn't have the necessary power (crappy celeron) to record the screen, unless its like 360p, and there's no point in doing that.
