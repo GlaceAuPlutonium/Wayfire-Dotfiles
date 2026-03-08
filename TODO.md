@@ -66,6 +66,8 @@ If in the mood :
 
 - PixDecor wants git master (Void repo is 0.10.1, git release is 0.10.1, master git is 0.11)
 
+- Check out [this dope stuff](https://github.com/TSM-061/ctOS) and amybe switch to greetd intsead of sddm so i could finally have this cool login animation
+
 - NF or NF-Mono ? (font) (for like kitty) NF = big icons, NFM = smol icons
 
 - Volume can get way too high (fyi 26478% volume IS too loud)
