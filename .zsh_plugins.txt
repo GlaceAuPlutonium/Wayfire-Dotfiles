@@ -1,0 +1,15 @@
+# autosuggestions
+zsh-users/zsh-autosuggestions
+
+# syntax highlighting
+zsh-users/zsh-syntax-highlighting
+
+# historique
+zsh-users/zsh-history-substring-search
+
+# completions
+zsh-users/zsh-completions
+
+# utilitaires oh-my-zsh sans oh-my-zsh
+ohmyzsh/ohmyzsh path:lib/git.zsh
+ohmyzsh/ohmyzsh path:lib/theme-and-appearance.zsh
