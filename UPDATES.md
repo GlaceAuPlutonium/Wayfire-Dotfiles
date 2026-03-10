@@ -13,3 +13,6 @@
 - Started working on Quickshell to replace Waybar
 - Added new wallpapers
 - Added install scripts
+
+10 March 2026
+- Done making CPU, RAM and Temp Quickshell modules on the topbar
