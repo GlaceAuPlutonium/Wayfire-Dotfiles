@@ -9,8 +9,7 @@ Must do :
 - Lite-XL usually shitting itself when copying big amounts of text then crashes. Lite-XL choking on itself when rendering lots of text
 
 - Begin work with Quickshell to replace Waybar/EWW
-- - Waybar : Everything
-- - - Add hover text display function like in Waybar
+- - Waybar : Network, Volume, Battery, Clock, Wayfire Workspaces. Also Add hover text display function like in Waybar
 - - EWW : Haven't started yet
 
 - Create symlinks to ~/dotfiles for better Github repository management
