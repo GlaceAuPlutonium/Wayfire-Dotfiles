@@ -69,6 +69,16 @@ There won't be any example/showcase images until I properly set up a way to take
 
 <ins> **Videos and GIFs showcases are ruled out.**</ins> The machine I'm currently using doesn't have the necessary power (crappy celeron) to record the screen, unless its like 360p, and there's no point in doing that.
 
-Lots of elements in this project come from [blueyt's dotfiles](https://github.com/bluebyt/Wayfire-dots), thanks to him for his amazing work.
+### Inspired by
 
-## 🚧 This page is still being built. 🚧
+This project started as a base directly inspired by [blueyt's dotfiles](https://github.com/bluebyt/Wayfire-dots), thanks to him for his amazing work. That means a lot of elements currently come from his project.
+
+However, a lot of it has been customised to fit my worflow and style, and I'm still adding features to try and make it more personal and detach my work from his.
+
+
+
+## ⚠️ **Work in progress**
+This project is still under active development. Some features and designs are still being developed/refined.  
+Feedback and suggestions are welcome !
+
+### 🚧 This page is still being built. 🚧
