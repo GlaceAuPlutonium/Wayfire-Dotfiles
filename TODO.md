@@ -1,10 +1,8 @@
 ## 🔨 All the things that must be done / bugs that must be fixed. 🔨
 
-Must do :
+📌 Must do :
 
-- Autosave screenshots (automatically, saves in desktop from swappy)
-
-- Backlight values inverted (hardware "problem") (0% for bright and 100% for screen turned off). Sometimes for no fucking reasons it turns off at 0%
+- Autosave screenshots (automatically, already saves in desktop from swappy)
 
 - Lite-XL usually shitting itself when copying big amounts of text then crashes. Lite-XL choking on itself when rendering lots of text
 
@@ -12,11 +10,9 @@ Must do :
 - - Waybar : Network, Volume, Battery, Clock, Wayfire Workspaces. Also Add hover text display function like in Waybar
 - - EWW : Haven't started yet
 
-- Create symlinks to ~/dotfiles for better Github repository management
-  
-- Emojis not typing in from rofimoji :upside_down_face: Neither with wofi-emoji btw. Tried fcitx5 but adds a crapton of kde dependencies and components
+- Emojis not typing in from rofimoji :upside_down_face: Neither with wofi-emoji btw. Tried fcitx5 but adds a crapton of kde dependencies and components so nuh uh
 
-- CAPSLOCK key not working with number
+- CAPSLOCK key not working with numbers for some reasons
 
 - Emojis are showing up in Yazi but not Lite-XL
 
@@ -34,9 +30,9 @@ Must do :
 - Mako needs in-depth functionnal configuraiton (visual done)
 
 
-EWW basically perfect, modify if needed
+EWW basically perfect, modify if needed (not for so long)
 Fastfetch is done, modify if needed
-Waybar is done, modify if needed (well no stupid workspaces css aint working)(using python rn) but its a pain in the ass, basically waybar css needs to update when changing workspace, would propably be better of by using a dedicatd shell ie. eww, ags, axshell, quickshell etc. So now I'm settled it'll be AGS
+Waybar is done, modify if needed (well no stupid workspaces css aint working)(using python rn) but its a pain in the ass, basically waybar css needs to update when changing workspace, would propably be better of by using a dedicatd shell ie. ags, axshell, quickshell etc. So now I'm settled it'll be quickshell
 
 Lite-XL is (almost) done, modify if needed
 Kitty is done (?), modify if needed
@@ -44,7 +40,7 @@ Wofi is done, modify if needed
 If a program isn't using tokyo-night theme, change it
 
 
-If in the mood :
+🎨 Things to check if in the mood or if I have time :
 
 - Look for audio visualiser / music player ie. ncmpcpp with Cava/Xava (where to put it ??). Also check out things like Tauon Music Box, Lollypop or Amberol. But if I do I don't know where tf I'd but it
 
@@ -52,11 +48,12 @@ If in the mood :
 
 - PixDecor but check out blueyt's install process
 
-- Get fucking nuts and do that stupid custom animation on bootup
+- Get fucking nuts and do that stupid custom animation on bootup (could be easier with quickshell)
+- Check out [this dope stuff](https://github.com/TSM-061/ctOS) and amybe switch to greetd intsead of sddm so i could finally have this cool login animation
 
 - Some way to type emojis (halfway through cuz it's janky for now)
 
-- Slight transparency on unused apps (see blueyt's setup)
+- Slight transparency/graying out on unused apps (see blueyt's setup)
 
 - A sound when a device is plugged in
 
@@ -66,21 +63,19 @@ If in the mood :
 
 - Maybe look for a dedicated music player instead of mpv
 
-- Is it possible to customise the look of bottom ?
-
 - PixDecor wants git master (Void repo is 0.10.1, git release is 0.10.1, master git is 0.11)
-
-- Check out [this dope stuff](https://github.com/TSM-061/ctOS) and amybe switch to greetd intsead of sddm so i could finally have this cool login animation
 
 - NF or NF-Mono ? (font) (for like kitty) NF = big icons, NFM = smol icons
 
-- Volume can get way too high (fyi 26478% volume IS too loud)
+- Volume can get way too high (fyi 26478% volume is indeed too loud)
+
+- Find a better way to manage ~/dotfiles maybe ?
 
 - Is av1 decoding currently suported ? or driver missing ?
 
 - Customize bottom (process viewer. its the pretty htop)
 
-- I mean that woudd be nice if i could touchscroll in kitty (it looks like)
+- I mean that woudd be nice if i could touchscroll in kitty (it looks like I cant)
 
 - Lite-xl sometimes no icon in taskbar on opening (there is but its undefined app icon)
   sometimes when going to lite-xl it switches back, or typing in lite-xl makes the icon appear
