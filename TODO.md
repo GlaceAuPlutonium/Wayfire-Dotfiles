@@ -10,11 +10,14 @@ Must do :
 
 - Begin work with Quickshell to replace Waybar/EWW
 - - Waybar : Everything
+- - - Add hover text display function like in Waybar
 - - EWW : Haven't started yet
 
 - Create symlinks to ~/dotfiles for better Github repository management
   
 - Emojis not typing in from rofimoji :upside_down_face: Neither with wofi-emoji btw. Tried fcitx5 but adds a crapton of kde dependencies and components
+
+- CAPSLOCK key not working with number
 
 - Emojis are showing up in Yazi but not Lite-XL
 
@@ -63,6 +66,8 @@ If in the mood :
 - Clipboard manager ie. Clipse, annoying af (or just have a clipboard manager I guess)
 
 - Maybe look for a dedicated music player instead of mpv
+
+- Is it possible to customise the look of bottom ?
 
 - PixDecor wants git master (Void repo is 0.10.1, git release is 0.10.1, master git is 0.11)
 

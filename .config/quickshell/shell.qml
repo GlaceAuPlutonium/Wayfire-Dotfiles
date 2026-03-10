@@ -119,7 +119,7 @@ PanelWindow {
             Rectangle {
                 id:     cpuPill
                 height: root.pillHeight
-                width:  cpuText.implicitWidth + root.padH * 2
+                Layout.preferredWidth:  cpuText.implicitWidth + root.padH * 2
                 radius: root.radius
                 color:  root.bgColor
 
@@ -127,29 +127,30 @@ PanelWindow {
                 property int lastIdle:  0
                 property int lastTotal: 0
 
-                Process {
-                    id:      cpuReader
-                    command: ["sh", "-c", "head -1 /proc/stat"]
-                    stdout: SplitParser {
-                        onRead: data => {
-                            if (!data) return
-                            var p     = data.trim().split(/\s+/)
-                            var idle  = parseInt(p[4]) + parseInt(p[5])
-                            var total = p.slice(1, 8).reduce((a, b) => a + parseInt(b), 0)
-                            if (cpuPill.lastTotal > 0)
-                                cpuPill.cpuUsage = Math.round(100 * (1 - (idle - cpuPill.lastIdle) / (total - cpuPill.lastTotal)))
-                            cpuPill.lastIdle  = idle
-                            cpuPill.lastTotal = total
+                FileView {
+                    id: cpuFile
+                    path: "/proc/stat"
+                    watchChanges: false
+
+                    onLoaded: {
+                        var line = text().split("\n")[0]
+                        var p = line.trim().split(/\s+/)
+                        var idle  = parseInt(p[4]) + parseInt(p[5])
+                        var total = p.slice(1, 8).reduce((a, b) => a + parseInt(b), 0)
+                        if (cpuPill.lastTotal > 0)
+                            cpuPill.cpuUsage = Math.round(100 * (1 - (idle - cpuPill.lastIdle) / (total - cpuPill.lastTotal)))
+                        cpuPill.lastIdle  = idle
+                    cpuPill.lastTotal = total
                         }
-                    }
                 }
 
+
                 Timer {
-                    interval:         2000
+                    interval:         5000
                     running:          true
                     repeat:           true
                     triggeredOnStart: true
-                    onTriggered:      cpuReader.running = true
+                    onTriggered:      cpuFile.reload()
                 }
 
                 Text {
@@ -167,14 +168,41 @@ PanelWindow {
             Rectangle {
                 id:     ramPill
                 height: root.pillHeight
-                width:  ramIcon.implicitWidth + root.padH * 2
+                Layout.preferredWidth:  ramIcon.implicitWidth + root.padH * 2
                 radius: root.radius
                 color:  root.bgColor
+
+                property int ramUsage: 0
+
+                FileView {
+                    id: ramFile
+                    path: "/proc/meminfo"
+                    watchChanges: false
+
+                    onLoaded: {
+                        var lines = text().split("\n")
+                        var total = 0, available = 0
+                        for (var l of lines) {
+                            if (l.startsWith("MemTotal:"))     total     = parseInt(l.split(/\s+/)[1])
+                            if (l.startsWith("MemAvailable:")) available = parseInt(l.split(/\s+/)[1])
+                        }
+                        if (total > 0)
+                            ramPill.ramUsage = Math.round(100 * (1 - available / total))
+                    }
+                }
+
+                Timer {
+                    interval: 5000
+                    running: true
+                    repeat: true
+                    triggeredOnStart: true
+                    onTriggered: ramFile.reload()
+                }
 
                 Text {
                     id:             ramIcon
                     anchors.centerIn: parent
-                    text:           "56% "
+                    text:           ramPill.ramUsage + "% "
                     color:          root.colRam
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
@@ -185,14 +213,31 @@ PanelWindow {
             Rectangle {
                 id:     tempPill
                 height: root.pillHeight
-                width:  tempIcon.implicitWidth + root.padH * 2 + 2
+                Layout.preferredWidth:  tempIcon.implicitWidth + root.padH * 2 + 2
                 radius: root.radius
                 color:  root.bgColor
+
+                property int cpuTemp: 0
+
+                FileView {
+                    id: tempFile
+                    path: "/sys/class/hwmon/hwmon2/temp2_input"
+                    watchChanges: false
+                    onLoaded: tempPill.cpuTemp = Math.round(parseInt(text())/1000)
+                }
+
+                Timer {
+                    interval: 2000
+                    running: true
+                    repeat: true
+                    triggeredOnStart: true
+                    onTriggered: tempFile.reload()
+                }
 
                 Text {
                     id:             tempIcon
                     anchors.centerIn: parent
-                    text:           ""
+                    text:           tempPill.cpuTemp + "°C "
                     color:          root.colTemp
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
@@ -200,34 +245,22 @@ PanelWindow {
             }
             
             // Backlight
-            Rectangle {
-                id:     lightPill
-                height: root.pillHeight
-                width:  lightIcon.implicitWidth + root.padH * 2 + 2
-                radius: root.radius
-                color:  root.bgColor
-
-                Text {
-                    id:             lightIcon
-                    anchors.centerIn: parent
-                    text:           ""
-                    color:          root.colLight
-                    font.family:    root.fontFamily
-                    font.pixelSize: root.fontSize
-                }
-
-                MouseArea {
-                    anchors.fill: parent
-                    cursorShape:  Qt.PointingHandCursor
-                    onClicked:    Quickshell.execDetached(["wlogout"])
-                }
+            Backlight {
+                pillHeight:  root.pillHeight
+                bgColor:     root.bgColor
+                radius:      root.radius
+                padH:        root.padH
+                fontFamily:  root.fontFamily
+                fontSize:    root.fontSize
+                accentColor: root.colLight
             }
+
             
             // Network
             Rectangle {
                 id:     networkPill
                 height: root.pillHeight
-                width:  networkIcon.implicitWidth + root.padH * 2 + 2
+                Layout.preferredWidth:  networkIcon.implicitWidth + root.padH * 2 + 2
                 radius: root.radius
                 color:  root.bgColor
 
@@ -251,7 +284,7 @@ PanelWindow {
             Rectangle {
                 id:     volumePill
                 height: root.pillHeight
-                width:  volumeIcon.implicitWidth + root.padH * 2 + 2
+                Layout.preferredWidth:  volumeIcon.implicitWidth + root.padH * 2 + 2
                 radius: root.radius
                 color:  root.bgColor
 
@@ -275,7 +308,7 @@ PanelWindow {
             Rectangle {
                 id:     batteryPill
                 height: root.pillHeight
-                width:  batteryIcon.implicitWidth + root.padH * 2 + 2
+                Layout.preferredWidth:  batteryIcon.implicitWidth + root.padH * 2 + 2
                 radius: root.radius
                 color:  root.bgColor
 
@@ -299,7 +332,7 @@ PanelWindow {
             Rectangle {
                 id:     powerPill
                 height: root.pillHeight
-                width:  powerIcon.implicitWidth + root.padH * 2 + 2
+                Layout.preferredWidth:  powerIcon.implicitWidth + root.padH * 2 + 2
                 radius: root.radius
                 color:  root.bgColor
 
