@@ -15,4 +15,4 @@
 - Added install scripts
 
 10 March 2026
-- Done making CPU, RAM and Temp Quickshell modules on the topbar
+- Done making CPU, RAM, Temp and Backlight Quickshell modules on the topbar
