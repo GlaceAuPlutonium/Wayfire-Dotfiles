@@ -16,3 +16,4 @@
 
 10 March 2026
 - Done making CPU, RAM, Temp and Backlight Quickshell modules on the topbar
+- Fixed the backlight issue where the wrong percentage value was shown due to hardware using an inverted range of values for screen brightness. Was fixed simply by switching to Quickshell and rewriting the light module with a proper percentage shown 
