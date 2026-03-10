@@ -17,7 +17,7 @@ Rectangle {
     readonly property int maxRaw: 3906
 
     property int rawValue:     0
-    property int displayValue: 0  // 0-100, corrigé pour l'inversion
+    property int displayValue: 0  // 0-100, corrected to compensate for hardware inverted values
 
     height: pillHeight
     Layout.preferredWidth: lightText.implicitWidth + padH * 2
@@ -30,7 +30,7 @@ Rectangle {
     }
 
     
-    // -- Lecture --
+    // getting the brightness value
     FileView {
         id: backlightFile
         path: "/sys/class/backlight/intel_backlight/brightness"
@@ -49,7 +49,7 @@ Rectangle {
         onTriggered: backlightFile.reload()
     }
 
-    // -- Affichage --
+    // -- display --
     Text {
         id: lightText
         anchors.centerIn: parent
@@ -59,12 +59,11 @@ Rectangle {
         font.pixelSize: fontSize
     }
 
-    // -- Interaction scroll --
+    // -- scrolling --
     MouseArea {
         anchors.fill: parent
         acceptedButtons: Qt.NoButton
         onWheel: wheel => {
-            // +10% scroll up, -10% scroll down (en tenant compte de l'inversion)
             var step = Math.round(backlightPill.maxRaw * 0.01)
             var newRaw = wheel.angleDelta.y < 0
                 ? Math.max(0, backlightPill.rawValue - step)
