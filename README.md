@@ -69,7 +69,7 @@ There won't be any example/showcase images until I properly set up a way to take
 
 <ins> **Videos and GIFs showcases are ruled out.**</ins> The machine I'm currently using doesn't have the necessary power (crappy celeron) to record the screen, unless its like 360p, and there's no point in doing that.
 
-### Inspired by
+### Inspiration
 
 This project started as a base directly inspired by [blueyt's dotfiles](https://github.com/bluebyt/Wayfire-dots), thanks to him for his amazing work. That means a lot of elements currently come from his project.
 
