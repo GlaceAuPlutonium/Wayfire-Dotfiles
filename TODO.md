@@ -75,6 +75,8 @@ If a program isn't using tokyo-night theme, change it
 
 - Customize bottom (process viewer. its the pretty htop)
 
+- extras install script not working when it comes to Phinger Cursors, see what's going on
+
 - I mean that woudd be nice if i could touchscroll in kitty (it looks like I cant)
 
 - Lite-xl sometimes no icon in taskbar on opening (there is but its undefined app icon)
