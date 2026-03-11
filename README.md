@@ -21,64 +21,67 @@ This repository isn't only for the dotfiles, I also keep track of what I have to
 
 
 ## Main things (?)
-- Distro : [Void Linux](https://voidlinux.org/) // Independent lightweight, systemd-free, musl-compatible, stable rolling-release GNU/Linux distribution based on the XBPS package manager.
-- WM : [Wayfire](https://wayfire.org/) // Wayfire is a 3D Wayland compositor.
-- Bar* : [Waybar](https://github.com/Alexays/Waybar) // Highly customisable bar for wlroots-based compositors.
-- Sidebar : [Elkowar's Wacky Widgets](https://github.com/elkowar/eww) // Cool widget system written in Rust that allows you to make your own widgets.
-- Terminal : [kitty](https://github.com/kovidgoyal/kitty) // Fast, feature-rich, GPU-based terminal.
-- Shell : [ZSH](https://www.zsh.org/) // Powerful shell. (sorry the official site is ugly af)
-- Launcher : [Wofi](https://github.com/SimplyCEO/wofi) // Launcher/menu program for wlroots-based Wayland compositors.
-- File Explorer : [Yazi](https://yazi-rs.github.io/) // Blazing fast, terminal-based file explorer written in Rust.
-- Notifications : [Mako](https://github.com/emersion/mako) // Lightweight notification daemon for Wayland.
-- Theme : [TokyoNight](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) // Really nice dark theme for GTK apps with overall purple/dark-blue tints.
-- Font : [Caskaydia Cove](https://www.nerdfonts.com/font-downloads) // A fun, monospaced Nerd Font
+- **Distro** : [Void Linux](https://voidlinux.org/) // Independent lightweight, systemd-free, musl-compatible, stable rolling-release GNU/Linux distribution based on the XBPS package manager.
+- **WM** : [Wayfire](https://wayfire.org/) // Wayfire is a 3D Wayland compositor.
+- **Bar*** : [Waybar](https://github.com/Alexays/Waybar) // Highly customisable bar for wlroots-based compositors.
+- **Sidebar** : [Elkowar's Wacky Widgets](https://github.com/elkowar/eww) // Cool widget system written in Rust that allows you to make your own widgets.
+- **Terminal** : [kitty](https://github.com/kovidgoyal/kitty) // Fast, feature-rich, GPU-based terminal.
+- **Shell** : [ZSH](https://www.zsh.org/) // Powerful shell. (sorry the official site is ugly af)
+- **Launcher** : [Wofi](https://github.com/SimplyCEO/wofi) // Launcher/menu program for wlroots-based Wayland compositors.
+- **File Explorer** : [Yazi](https://yazi-rs.github.io/) // Blazing fast, terminal-based file explorer written in Rust.
+- **Notifications** : [Mako](https://github.com/emersion/mako) // Lightweight notification daemon for Wayland.
+- **Theme** : [TokyoNight](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) // Really nice dark theme for GTK apps with overall purple/dark-blue tints.
+- **Font** : [Caskaydia Cove](https://www.nerdfonts.com/font-downloads) // A fun, monospaced Nerd Font
 
 *The bar is currently being rewritten using [Quickshell](https://quickshell.org/) which gives me a more flexible bar to work with. Currently about 40% done.
 
 
+## Showcase
+
+Screenshots will be added later.
+
+<ins> **Videos and GIFs showcases are ruled out.**</ins> The machine I'm currently using doesn't have the necessary power (crappy celeron) to record the screen, unless its like 360p, and there's no point in doing that.
 
 
+## Install scripts
+These scripts are optionnal. Don't blindly run all of them, you probably don't need them.  
 
+[01-install-packages.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/01-install-packages.sh) It installs most of the packages used in this setup. Don't run it unless you want a similar/the exact same environment.
 
-## Important
-
-### Install scripts
-Don't blindly run every install scripts, you probably don't need them.  
-
-[01-install-packages.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/01-install-packages.sh) Don't run this one unless you want to install a lot of packages that you may not need.  
-
-[02-install-extras.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/02-install-extras.sh) Run this script if you want to install some extras on your system, which are :  
+[02-install-extras.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/02-install-extras.sh) Run this script if you want to install some extras, which are :  
 - Tokyonight GTK Theme (GTK theme)
 - MoreWaita Icon Theme (icon theme)
-- Phinger Cursors Theme (cursor theme)
+- Phinger Cursors Theme (cursor theme) - *Currently broken it seems*
 - SDDM Astronaut Theme in Hyprland_Kath configuration (custom SDDM theme)
 - Antidote (for ZSH)
 - CyberGRUB-2077 (custom GRUB boot menu)
 
-[03-copy-config.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/03-copy-config.sh) This is what you need if all you care about are the dots. In additon to copying .config, it will also copy :
-- Wallpapers
+[03-copy-config.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/03-copy-config.sh) This is what you need if all you care about are the dots. It copies the actual dotfiles and assets :
+- .config
 - .icons
 - .local/share/fonts/CaskaydiaCove
+- Wallpapers
 - .zshrc and .zsh_plugins.txt
 
-Feel free to edit the scripts if there are things you don't want to install.
+Feel free to modify the scripts if before running them if you only want specific parts.
 
-### Showcase
 
-There won't be any example/showcase images until I properly set up a way to take screenshots. Until then, this page will remain a blank and sad wall of text (I mean you can still use the dots if you're curious).
-
-<ins> **Videos and GIFs showcases are ruled out.**</ins> The machine I'm currently using doesn't have the necessary power (crappy celeron) to record the screen, unless its like 360p, and there's no point in doing that.
+## Important
 
 ### Inspiration
 
-This project started as a base directly inspired by [blueyt's dotfiles](https://github.com/bluebyt/Wayfire-dots), thanks to him for his amazing work. That means a lot of elements currently come from his project.
+This project originally started from [blueyt's dotfiles](https://github.com/bluebyt/Wayfire-dots), thanks to him for his amazing work.
 
-However, a lot of it has been customised to fit my worflow and style, and I'm still adding features to try and make it more personal and detach my work from his.
+I used it as a base to learn ricing and progressively modified it to fit my own workflow and preferences.
 
+### Notes
 
+Some parts of this setup were written with the help of LLMs (GPT/Claude), mostly for small utility scripts, quick problem solving or when I needed help understanding how to implement something.
+
+Although I love the customisation and ricing side of Linux and I'm willing to spend hours tinkering with code, in the end I'm not a developer. I use these tools mostly to help with the more technical parts.
 
 ## ⚠️ **Work in progress**
-This project is still under active development. Some features and designs are still being developed/refined.  
+This project is still under active development. Some features and designs are still being developed or refined.  
 Feedback and suggestions are welcome !
 
 ### 🚧 This page is still being built. 🚧
