@@ -20,7 +20,7 @@ This repository isn't only for the dotfiles, I also keep track of what I have to
 [UPDATES.md](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/UPDATES.md)
 
 
-## Main things (?)
+## Main components
 - **Distro** : [Void Linux](https://voidlinux.org/) // Independent lightweight, systemd-free, musl-compatible, stable rolling-release GNU/Linux distribution based on the XBPS package manager.
 - **WM** : [Wayfire](https://wayfire.org/) // Wayfire is a 3D Wayland compositor.
 - **Bar*** : [Waybar](https://github.com/Alexays/Waybar) // Highly customisable bar for wlroots-based compositors.
