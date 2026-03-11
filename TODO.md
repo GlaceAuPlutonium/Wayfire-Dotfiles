@@ -71,6 +71,8 @@ If a program isn't using tokyo-night theme, change it
 
 - Find a better way to manage ~/dotfiles maybe ?
 
+- Check out SwayOSD
+
 - Is av1 decoding currently suported ? or driver missing ?
 
 - Customize bottom (process viewer. its the pretty htop)
