@@ -20,9 +20,8 @@ cd MoreWaita
 sudo ./install.sh
 cd "$WORKDIR"
 
-# Phinger Cursor Theme
-wget -cO- https://github.com/phish/phinger-cursors/releases/latest/download/phinger-cursors-variants.tar.bz2 \
-| sudo tar xfj - -C /usr/share/icons
+# Phinger Cursor Theme - Commented for now because last time I tried I didn't work so I gotta check what's wrong
+# wget -cO- https://github.com/phish/phinger-cursors/releases/latest/download/phinger-cursors-variants.tar.bz2 | sudo tar xfj - -C /usr/share/icons
 
 # SDDM Astronaut Theme
 sudo git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git \
