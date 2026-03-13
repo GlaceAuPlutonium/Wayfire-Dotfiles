@@ -225,7 +225,7 @@ PanelWindow {
                     
                     ToolTip {
                         visible: ramHover.containsMouse
-                        delay: 0
+                        delay: 500
                         x: 60
                         contentItem: Text {
                             text: ramPill.ramUsedGiB.toFixed(1) + " GiB used"
