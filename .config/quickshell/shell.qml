@@ -119,171 +119,36 @@ PanelWindow {
             Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
 
 
-            // CPU
-            Rectangle {
-                id:     cpuPill
-                height: root.pillHeight
-                Layout.preferredWidth:  cpuText.implicitWidth + root.padH * 2
-                radius: root.radius
-                color:  root.bgColor
-
-                property int cpuUsage:  0
-                property int lastIdle:  0
-                property int lastTotal: 0
-
-                FileView {
-                    id: cpuFile
-                    path: "/proc/stat"
-                    watchChanges: false
-
-                    onLoaded: {
-                        var line = text().split("\n")[0]
-                        var p = line.trim().split(/\s+/)
-                        var idle  = parseInt(p[4]) + parseInt(p[5])
-                        var total = p.slice(1, 8).reduce((a, b) => a + parseInt(b), 0)
-                        if (cpuPill.lastTotal > 0)
-                            cpuPill.cpuUsage = Math.round(100 * (1 - (idle - cpuPill.lastIdle) / (total - cpuPill.lastTotal)))
-                        cpuPill.lastIdle  = idle
-                    cpuPill.lastTotal = total
-                        }
-                }
-
-
-                Timer {
-                    interval:         5000
-                    running:          true
-                    repeat:           true
-                    triggeredOnStart: true
-                    onTriggered:      cpuFile.reload()
-                }
-
-                Text {
-                    id:             cpuText
-                    anchors.centerIn: parent
-                    text:           cpuPill.cpuUsage + "% "
-                    color:          root.colCpu
-                    font.family:    root.fontFamily
-                    font.pixelSize: root.fontSize
-                    topPadding:     2
-                }
+            Cpu {
+                pillHeight:  root.pillHeight
+                bgColor:     root.bgColor
+                radius:      root.radius
+                padH:        root.padH
+                fontFamily:  root.fontFamily
+                fontSize:    root.fontSize
+                colCpu:      root.colCpu
             }
 
-
-            
-            // RAM
-            Rectangle {
-                id:     ramPill
-                height: root.pillHeight
-                Layout.preferredWidth:  ramIcon.implicitWidth + root.padH * 2
-                radius: root.radius
-                color:  root.bgColor
-
-                property int ramUsage: 0
-                property int ramUsedGiB: 0.0
-
-                FileView {
-                    id: ramFile
-                    path: "/proc/meminfo"
-                    watchChanges: false
-
-                    onLoaded: {
-                        var lines = text().split("\n")
-                        var total = 0, available = 0
-                        for (var l of lines) {
-                            if (l.startsWith("MemTotal:"))     total     = parseInt(l.split(/\s+/)[1])
-                            if (l.startsWith("MemAvailable:")) available = parseInt(l.split(/\s+/)[1])
-                        }
-                        if (total > 0) {
-                            ramPill.ramUsage = Math.round(100 * (1 - available / total))
-                            ramPill.ramUsedGiB  = ((total - available) / 1048576 * 10) / 10
-                        }
-                    }
-                }
-
-                Timer {
-                    interval: 5000
-                    running: true
-                    repeat: true
-                    triggeredOnStart: true
-                    onTriggered: ramFile.reload()
-                }
-
-                Text {
-                    id:             ramIcon
-                    anchors.centerIn: parent
-                    text:           ramPill.ramUsage + "% "
-                    color:          root.colRam
-                    font.family:    root.fontFamily
-                    font.pixelSize: root.fontSize
-                    topPadding:     2
-                }
-
-                MouseArea {
-                    id: ramHover
-                    anchors.fill: parent
-                    hoverEnabled: true
-                    
-                    ToolTip {
-                        visible: ramHover.containsMouse
-                        delay: 500
-                        x: 60
-                        contentItem: Text {
-                            text: ramPill.ramUsedGiB.toFixed(1) + " GiB used"
-                            color: "#dce1f5"
-                            font.family: root.fontFamily
-                            font.pixelSize: root.fontSize
-                            topPadding: -4
-                        }
-
-                        background: Rectangle {
-                            color: "#121212"
-                            radius: root.radius - 2
-                        }
-                    }
-                }
+            Ram {
+                pillHeight:  root.pillHeight
+                bgColor:     root.bgColor
+                radius:      root.radius
+                padH:        root.padH
+                fontFamily:  root.fontFamily
+                fontSize:    root.fontSize
+                colRam:      root.colRam
             }
 
-
-            
-            // Temp
-            Rectangle {
-                id:     tempPill
-                height: root.pillHeight
-                Layout.preferredWidth:  tempIcon.implicitWidth + root.padH * 2 + 2
-                radius: root.radius
-                color:  root.bgColor
-
-                property int cpuTemp: 0
-
-                FileView {
-                    id: tempFile
-                    path: "/sys/class/hwmon/hwmon2/temp2_input"
-                    watchChanges: false
-                    onLoaded: tempPill.cpuTemp = Math.round(parseInt(text())/1000)
-                }
-
-                Timer {
-                    interval: 2000
-                    running: true
-                    repeat: true
-                    triggeredOnStart: true
-                    onTriggered: tempFile.reload()
-                }
-
-                Text {
-                    id:             tempIcon
-                    anchors.centerIn: parent
-                    text:           tempPill.cpuTemp + "°C "
-                    color:          root.colTemp
-                    font.family:    root.fontFamily
-                    font.pixelSize: root.fontSize
-                    topPadding:     1
-                }
+            Temp {
+                pillHeight:  root.pillHeight
+                bgColor:     root.bgColor
+                radius:      root.radius
+                padH:        root.padH
+                fontFamily:  root.fontFamily
+                fontSize:    root.fontSize
+                colTemp:     root.colTemp
             }
-
-
-            
-            // Backlight
+                        
             Backlight {
                 pillHeight:  root.pillHeight
                 bgColor:     root.bgColor
