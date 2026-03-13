@@ -49,7 +49,7 @@ Rectangle {
         onTriggered: backlightFile.reload()
     }
 
-    // -- display --
+
     Text {
         id: lightText
         anchors.centerIn: parent
@@ -57,6 +57,7 @@ Rectangle {
         color: accentColor
         font.family: fontFamily
         font.pixelSize: fontSize
+        topPadding:     1
     }
 
     // -- scrolling --

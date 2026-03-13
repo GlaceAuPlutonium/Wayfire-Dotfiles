@@ -7,7 +7,8 @@
 - Lite-XL usually shitting itself when copying big amounts of text then crashes. Lite-XL choking on itself when rendering lots of text
 
 - Begin work with Quickshell to replace Waybar/EWW
-- - Waybar : Network, Volume, Battery, Clock, Wayfire Workspaces. Also Add hover text display function like in Waybar
+- - Waybar : Network, Volume, Battery, Clock, Wayfire Workspaces.
+- - Hover tooltip was added in Quickshell bar but it wont show up in the right place, see how to fix that
 - - EWW : Haven't started yet
 
 - Emojis not typing in from rofimoji :upside_down_face: Neither with wofi-emoji btw. Tried fcitx5 but adds a crapton of kde dependencies and components so nuh uh

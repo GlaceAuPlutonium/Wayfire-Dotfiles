@@ -2,6 +2,7 @@ import Quickshell
 import Quickshell.Io
 import QtQuick
 import QtQuick.Layouts
+import QtQuick.Controls
 
 PanelWindow {
     id: root
@@ -69,6 +70,7 @@ PanelWindow {
                     color:          root.colLauncher
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
+                    topPadding:     1
                 }
 
                 MouseArea {
@@ -99,6 +101,7 @@ PanelWindow {
                     color:          root.colClock
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
+                    topPadding:     1
                 }
 
                 Timer {
@@ -114,6 +117,7 @@ PanelWindow {
         RowLayout {
             spacing:          root.pillSpacing
             Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+
 
             // CPU
             Rectangle {
@@ -160,8 +164,10 @@ PanelWindow {
                     color:          root.colCpu
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
+                    topPadding:     2
                 }
             }
+
 
             
             // RAM
@@ -173,6 +179,7 @@ PanelWindow {
                 color:  root.bgColor
 
                 property int ramUsage: 0
+                property int ramUsedGiB: 0.0
 
                 FileView {
                     id: ramFile
@@ -186,8 +193,10 @@ PanelWindow {
                             if (l.startsWith("MemTotal:"))     total     = parseInt(l.split(/\s+/)[1])
                             if (l.startsWith("MemAvailable:")) available = parseInt(l.split(/\s+/)[1])
                         }
-                        if (total > 0)
+                        if (total > 0) {
                             ramPill.ramUsage = Math.round(100 * (1 - available / total))
+                            ramPill.ramUsedGiB  = ((total - available) / 1048576 * 10) / 10
+                        }
                     }
                 }
 
@@ -206,8 +215,35 @@ PanelWindow {
                     color:          root.colRam
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
+                    topPadding:     2
+                }
+
+                MouseArea {
+                    id: ramHover
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    
+                    ToolTip {
+                        visible: ramHover.containsMouse
+                        delay: 0
+                        x: 60
+                        contentItem: Text {
+                            text: ramPill.ramUsedGiB.toFixed(1) + " GiB used"
+                            color: "#dce1f5"
+                            font.family: root.fontFamily
+                            font.pixelSize: root.fontSize
+                            topPadding: -4
+                        }
+
+                        background: Rectangle {
+                            color: "#121212"
+                            radius: root.radius - 2
+                        }
+                    }
                 }
             }
+
+
             
             // Temp
             Rectangle {
@@ -241,8 +277,11 @@ PanelWindow {
                     color:          root.colTemp
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
+                    topPadding:     1
                 }
             }
+
+
             
             // Backlight
             Backlight {
@@ -254,6 +293,7 @@ PanelWindow {
                 fontSize:    root.fontSize
                 accentColor: root.colLight
             }
+
 
             
             // Network
@@ -271,6 +311,7 @@ PanelWindow {
                     color:          root.colNetwork
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
+                    topPadding:     1
                 }
 
                 MouseArea {
@@ -279,6 +320,8 @@ PanelWindow {
                     onClicked:    Quickshell.execDetached(["wlogout"])
                 }
             }
+
+
             
             // Volume
             Rectangle {
@@ -295,6 +338,7 @@ PanelWindow {
                     color:          root.colVolume
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
+                    topPadding:     1
                 }
 
                 MouseArea {
@@ -303,6 +347,8 @@ PanelWindow {
                     onClicked:    Quickshell.execDetached(["wlogout"])
                 }
             }
+
+
 
             // Battery
             Rectangle {
@@ -319,6 +365,7 @@ PanelWindow {
                     color:          root.colBattery
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
+                    topPadding:     1
                 }
 
                 MouseArea {
@@ -327,6 +374,8 @@ PanelWindow {
                     onClicked:    Quickshell.execDetached(["wlogout"])
                 }
             }
+
+
 
             // Power (wlogout)
             Rectangle {
@@ -343,6 +392,7 @@ PanelWindow {
                     color:          root.colPower
                     font.family:    root.fontFamily
                     font.pixelSize: root.fontSize
+                    topPadding:     1
                 }
 
                 MouseArea {
