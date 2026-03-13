@@ -8,7 +8,7 @@ Rectangle {
 
     property int    pillHeight:  24
     property color  bgColor:     "#cc1a1b26"
-    property int    pillradius:      8
+    property int    pillradius:  8
     property int    padH:        6
     property string fontFamily:  "CaskaydiaCoveNF"
     property int    fontSize:    14
