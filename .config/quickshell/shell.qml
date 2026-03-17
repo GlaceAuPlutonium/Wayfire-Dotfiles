@@ -137,6 +137,7 @@ PanelWindow {
                 fontFamily:  root.fontFamily
                 fontSize:    root.fontSize
                 colRam:      root.colRam
+                parentWindow: root
             }
 
             Temp {
@@ -159,31 +160,16 @@ PanelWindow {
                 accentColor: root.colLight
             }
 
-
             
-            // Network
-            Rectangle {
-                id:     networkPill
-                height: root.pillHeight
-                Layout.preferredWidth:  networkIcon.implicitWidth + root.padH * 2 + 2
-                radius: root.radius
-                color:  root.bgColor
-
-                Text {
-                    id:             networkIcon
-                    anchors.centerIn: parent
-                    text:           ""
-                    color:          root.colNetwork
-                    font.family:    root.fontFamily
-                    font.pixelSize: root.fontSize
-                    topPadding:     1
-                }
-
-                MouseArea {
-                    anchors.fill: parent
-                    cursorShape:  Qt.PointingHandCursor
-                    onClicked:    Quickshell.execDetached(["wlogout"])
-                }
+            Network {
+                pillHeight:  root.pillHeight
+                bgColor:     root.bgColor
+                radius:      root.radius
+                padH:        root.padH
+                fontFamily:  root.fontFamily
+                fontSize:    root.fontSize
+                colNetwork:  root.colNetwork
+                parentWindow: root
             }
 
 
