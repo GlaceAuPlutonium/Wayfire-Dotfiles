@@ -33,7 +33,7 @@ This repository isn't only for the dotfiles, I also keep track of what I have to
 - **Theme** : [TokyoNight](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) // Really nice dark theme for GTK apps with overall purple/dark-blue tints.
 - **Font** : [Caskaydia Cove](https://www.nerdfonts.com/font-downloads) // A fun, monospaced Nerd Font
 
-*The bar is currently being rewritten using [Quickshell](https://quickshell.org/) which gives me a more flexible bar to work with. Currently about 40% done.
+*The bar is currently being rewritten using [Quickshell](https://quickshell.org/) which gives me a more flexible bar to work with. Currently about 55% done.
 
 
 ## Showcase
