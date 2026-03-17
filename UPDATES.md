@@ -21,3 +21,7 @@
 13 March 2026
 - Added hover tooltip in RAM module in Quickshell bar
 - Deleted micro and wf-shell in .config due to being not used
+
+17 March 2026
+- Quickshell / Added proper tooltip to RAM and Network using 'PopupWindow' component
+- Quickshell / Added Network module

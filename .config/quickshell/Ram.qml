@@ -5,7 +5,7 @@ import QtQuick.Layouts
 import QtQuick.Controls
 
 Rectangle {
-  id:     ramPill
+  id: ramPill
   
   property int pillHeight: 24
   property color bgColor: "#cc1a1b26"
@@ -14,6 +14,7 @@ Rectangle {
   property string fontFamily: "CaskaydiaCoveNF"
   property int fontSize: 14
   property color colRam: "#7dcfff"
+  property var parentWindow: null
 
   height: pillHeight
   Layout.preferredWidth:  ramIcon.implicitWidth + root.padH * 2
@@ -21,7 +22,7 @@ Rectangle {
   color:  bgColor
 
   property int ramUsage: 0
-  property int ramUsedGiB: 0.0
+  property real ramUsedGiB: 0.0
 
   FileView {
     id: ramFile
@@ -60,27 +61,42 @@ Rectangle {
    topPadding:     2
   }
 
-    MouseArea {
-                    id: ramHover
-                    anchors.fill: parent
-                    hoverEnabled: true
-                    
-                    ToolTip {
-                        visible: ramHover.containsMouse
-                        delay: 500
-                        x: 60
-                        contentItem: Text {
-                            text: ramPill.ramUsedGiB.toFixed(1) + " GiB used"
-                            color: "#dce1f5"
-                            font.family: fontFamily
-                            font.pixelSize: fontSize
-                            topPadding: -4
-                        }
+  MouseArea {
+    id: ramHover
+    anchors.fill: parent
+    hoverEnabled: true
+    onEntered: ramPopup.visible = true
+    onExited:  ramPopup.visible = false
+  }
 
-                        background: Rectangle {
-                            color: "#121212"
-                            radius: pillRadius - 2
-                        }
-                    }
-                }
-            }
+  PopupWindow {
+    id: ramPopup
+    visible: false
+    parentWindow: ramPill.parentWindow
+
+    anchor.window: ramPill.parentWindow
+    anchor.rect.x: ramPill.mapToItem(null, 0, 0).x + (ramPill.width - width)
+    anchor.rect.y: 0
+    relativeY: height + 12
+
+    width: tooltipText.implicitWidth + root.padH * 2 + 2
+    height: 24
+    color: "transparent"
+
+    Rectangle {
+      anchors.fill: parent
+      color:  "#101010"
+      radius: 4
+
+      Text {
+        id: tooltipText
+        anchors.centerIn: parent
+        text:           ramPill.ramUsedGiB.toFixed(1) + " GiB used"
+        color:          "#e7eaff"
+        font.family:    ramPill.fontFamily
+        font.pixelSize: ramPill.fontSize
+        topPadding: 1
+      }
+    }
+  }
+}

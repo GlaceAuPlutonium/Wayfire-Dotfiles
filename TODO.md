@@ -7,9 +7,9 @@
 - Lite-XL usually shitting itself when copying big amounts of text then crashes. Lite-XL choking on itself when rendering lots of text
 
 - Begin work with Quickshell to replace Waybar/EWW
-- - Waybar : Network, Volume, Battery, Clock, Wayfire Workspaces.
-- - Hover tooltip was added in Quickshell bar but it wont show up in the right place, see how to fix that
-- - RAM Module : RAM amount in tooltip is incorrect (ie. 1.0 GiB instead of 1.4 or 2.0 GiB instead of 2.6)
+- - Waybar : Volume, Battery, Clock, Wayfire Workspaces.
+- - Tooltip added through PopupWindow, wont show up in the right place when parent position/size changes
+- - Network added but, need to show IP in tooltip, network isn't updated on actual network change (ie. connection/disconnection)
 - - EWW : Haven't started yet
 
 - Emojis not typing in from rofimoji :upside_down_face: Neither with wofi-emoji btw. Tried fcitx5 but adds a crapton of kde dependencies and components so nuh uh
