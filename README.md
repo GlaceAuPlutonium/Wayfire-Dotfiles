@@ -82,6 +82,6 @@ Although I love the customisation and ricing side of Linux and I'm willing to sp
 
 ## ⚠️ **Work in progress**
 This project is still under active development. Some features and designs are still being developed or refined.  
-Feedback and suggestions are welcome !
+<ins>Feedback and suggestions are welcome !</ins>
 
 ### 🚧 This page is still being built. 🚧
