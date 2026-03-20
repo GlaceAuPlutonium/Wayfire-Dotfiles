@@ -72,15 +72,13 @@ Rectangle {
   PopupWindow {
     id: ramPopup
     visible: false
-    parentWindow: ramPill.parentWindow
-
     anchor.window: ramPill.parentWindow
-    anchor.rect.x: ramPill.mapToItem(null, 0, 0).x + (ramPill.width - width)
-    anchor.rect.y: 0
-    relativeY: height + 12
 
-    width: tooltipText.implicitWidth + root.padH * 2 + 2
-    height: 24
+    anchor.rect.x: ramPill.mapToItem(null, 0, 0).x + (ramPill.width - width)
+    anchor.rect.y: (implicitHeight - 12)
+
+    implicitWidth: tooltipText.implicitWidth + root.padH * 2 + 2
+    implicitHeight: 24
     color: "transparent"
 
     Rectangle {

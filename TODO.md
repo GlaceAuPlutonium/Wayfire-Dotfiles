@@ -7,9 +7,10 @@
 - Lite-XL usually shitting itself when copying big amounts of text then crashes. Lite-XL choking on itself when rendering lots of text
 
 - Begin work with Quickshell to replace Waybar/EWW
-- - Waybar : Volume, Battery, Clock, Wayfire Workspaces.
+- - Waybar : Volume, Clock, Wayfire Workspaces.
 - - Tooltip added through PopupWindow, wont show up in the right place when parent position/size changes
 - - Network added but, need to show IP in tooltip, network isn't updated on actual network change (ie. connection/disconnection)
+- - Battery color wont change at 30%
 - - EWW : Haven't started yet
 
 - Emojis not typing in from rofimoji :upside_down_face: Neither with wofi-emoji btw. Tried fcitx5 but adds a crapton of kde dependencies and components so nuh uh
@@ -58,6 +59,9 @@ If a program isn't using tokyo-night theme, change it
 - Slight transparency/graying out on unused apps (see blueyt's setup)
 
 - A sound when a device is plugged in
+
+- See what cool animation I can do in the Quickshell bar, like battery shakig or extensions or smooth things, whatever see what i can do
+- Glow for battery module ?
 
 - Yeah so ags for the bars (top/side), need to install it (please don't be a fucker and use the astal/ags doc, not agsv1 doc). The point of it is to replace Waybar/EWW under a same app (and allow me to have a reactive topbar apperance when changing workspace). And also could allow me to have cool deploying pannels with like xava or idk could be neat. and what if using wf-shell for top bar ?
 

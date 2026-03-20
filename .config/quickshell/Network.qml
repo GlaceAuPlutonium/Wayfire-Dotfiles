@@ -107,15 +107,13 @@ Rectangle {
   PopupWindow {
     id: networkPopup
     visible: false
-    parentWindow: networkPill.parentWindow
-
     anchor.window: networkPill.parentWindow
-    anchor.rect.x: networkPill.mapToItem(null, 0, 0).x + (networkPill.width - width) / 2
-    anchor.rect.y: 0
-    relativeY: -height - 6
 
-    width:  popupText.implicitWidth + 16
-    height: popupText.implicitHeight + 10
+    anchor.rect.x: networkPill.mapToItem(null, 0, 0).x + (networkPill.width - width) / 2
+    anchor.rect.y: (implicitHeight - 6)
+
+    implicitWidth:  popupText.implicitWidth + 16
+    implicitHeight: popupText.implicitHeight + 10
     color:  "transparent"
 
     Rectangle {
