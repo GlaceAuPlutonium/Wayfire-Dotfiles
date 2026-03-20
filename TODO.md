@@ -7,7 +7,7 @@
 - Lite-XL usually shitting itself when copying big amounts of text then crashes. Lite-XL choking on itself when rendering lots of text
 
 - Begin work with Quickshell to replace Waybar/EWW
-- - Waybar : Volume, Clock, Wayfire Workspaces.
+- - Waybar : Volume, Clock, Wayfire Workspaces, wlr-taskbar (or other taskbar)
 - - Tooltip added through PopupWindow, wont show up in the right place when parent position/size changes
 - - Network added but, need to show IP in tooltip, network isn't updated on actual network change (ie. connection/disconnection)
 - - Battery color wont change at 30%, Popup showing 'Empty in' instead of 'Full in' when charging
