@@ -25,3 +25,7 @@
 17 March 2026
 - Quickshell / Added proper tooltip to RAM and Network using `PopupWindow` component
 - Quickshell / Added Network module
+
+20 March 2026
+- Added Battery module in Quickshell bar
+- Changed a few deprecated settings in network, ram and battery PopupWindow
