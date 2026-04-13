@@ -2,7 +2,7 @@
 My personal Wayfire rice dotfiles. Wayfire is a 3D Wayland compositor.
 
 
-** THIS IS A SEPARATE BRANCH FOR MY NIRI SETUP. CHECK MAIN BRANCH FOR WAYFIRE DOTS**
+**THIS IS A SEPARATE BRANCH FOR MY NIRI SETUP. CHECK MAIN BRANCH FOR WAYFIRE DOTS**
 
 ## **What is this place**
 This is a repo I use to keep track of my progress as I improve my system. Feel free to use the dots if you like them :)
