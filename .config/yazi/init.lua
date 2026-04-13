@@ -33,7 +33,7 @@ local bookmarks = {
   { tag = ".config", path = "~/.config", key = "c" },
   { tag = "root", path = "/", key = "r" },
   { tag = "Mounts", path = "/run/media/gap", key = "M" },
-  {tag = "Dots", path = "~/dotfiles", key = "f"}
+  {tag = "Dots", path = "~/.dotfiles-niri", key = "f"}
 }
 
 require("whoosh"):setup {

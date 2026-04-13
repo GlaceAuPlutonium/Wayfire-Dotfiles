@@ -45,7 +45,7 @@ return {
         ["underline"] = false
       }
     },
-    ["max_project_files"] = 5000,
+    ["max_project_files"] = 1000,
     ["max_tabs"] = 8,
     ["plugins"] = {
       ["colorpreview"] = {

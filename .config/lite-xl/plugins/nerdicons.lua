@@ -55,7 +55,10 @@ config.plugins.nerdicons = common.merge({
   }
 }, config.plugins.nerdicons)
 
-local icon_font = renderer.font.load(nerdfonts_symbols.path, 18.5 * SCALE)
+local icon_font = renderer.font.load(nerdfonts_symbols.path, 18.5 * SCALE,{
+  antialiasing="grayscale",
+  hinting="slight"
+  })
 local map = nerdfonts_symbols.utf8
 local chevron_width = icon_font:get_width(map["oct-chevron_down"])
 local previous_scale = SCALE

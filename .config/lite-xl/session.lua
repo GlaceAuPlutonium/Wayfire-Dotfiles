@@ -1,1 +1,1 @@
-return {recents={[1]="/home/gap"}, window={[1]=1366,[2]=736,[3]=0,[4]=32,["n"]=4}, window_mode="maximized", previous_find={[3]="expo",[1]="name",[2]="fastfe",[4]="editor"}, previous_replace={[1]="url"}}
+return {recents={[3]="/home/gap/Pictures",[1]="/home/gap/.config/niri",[2]="/home/gap"}, window={[1]=997,[2]=854,[3]=0,[4]=0,["n"]=4}, window_mode="normal", previous_find={[3]="expo",[1]="name",[2]="fastfe",[4]="editor"}, previous_replace={[1]="url"}}

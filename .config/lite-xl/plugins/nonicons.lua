@@ -50,7 +50,10 @@ config.plugins.nonicons = common.merge({
   }
 }, config.plugins.nonicons)
 
-local icon_font = renderer.font.load(nonicons.path, 15 * SCALE)
+local icon_font = renderer.font.load(nonicons.path, 15 * SCALE,{
+  antialiasing="grayscale",
+  hinting="slight"
+  })
 local map = nonicons.utf8
 local chevron_width = icon_font:get_width(map["chevron-down-16"])
 local previous_scale = SCALE

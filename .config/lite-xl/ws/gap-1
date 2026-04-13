@@ -1,1 +1,1 @@
-return { path = "/home/gap", documents = {["views"]={[1]={["scroll"]={["y"]=0,["x"]=0},["text"]=false,["filename"]=".config/TODO.md",["active"]=true,["type"]="doc",["selection"]={[1]=19,[2]=31,[3]=19,[4]=31}}},["type"]="leaf",["active_view"]=1}, directories = {} }
+return { path = "/home/gap", documents = {["active_view"]=1,["views"]={[1]={["filename"]=".config/niri/config.kdl",["text"]=false,["selection"]={[1]=290,[2]=24,[3]=290,[4]=24},["type"]="doc",["active"]=true,["scroll"]={["x"]=0,["y"]=5932.4099891226}}},["type"]="leaf"}, directories = {} }

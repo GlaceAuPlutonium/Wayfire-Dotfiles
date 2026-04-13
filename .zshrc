@@ -24,5 +24,4 @@ alias ff='fastfetch'
 
 alias ffull='fastfetch --config ~/.config/fastfetch/config_full.jsonc'
 
-alias vesktop='~/.local/bin/Vesktop-1.6.3.AppImage'
-alias discord='~/.local/bin/Vesktop-1.6.3.AppImage'
+alias logseq='~/.local/bin/Logseq-0.10.15.AppImage'

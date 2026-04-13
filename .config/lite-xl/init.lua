@@ -25,8 +25,16 @@ local syntax = require "core.syntax"
 ------------------------------- Fonts ----------------------------------------
 
 -- customize fonts:
--- style.font = renderer.font.load(DATADIR .. "/fonts/FiraSans-Regular.ttf", 14 * SCALE)
-style.code_font = renderer.font.load(USERDIR .. "/fonts/CaskaydiaCoveNerdFontMono-SemiLight.ttf", 16 * SCALE)
+style.font = renderer.font.load(DATADIR .. "/fonts/FiraSans-Regular.ttf", 15 * SCALE,{
+  antialiasing="grayscale",
+  hinting="slight"
+  })
+  
+style.code_font = renderer.font.load(USERDIR .. "/fonts/CaskaydiaCoveNerdFontMono-SemiLight.ttf", 16 * SCALE,{
+  antialiasing="grayscale",
+  hinting="slight"
+  })
+  
 --
 -- DATADIR is the location of the installed Lite XL Lua code, default color
 -- schemes and fonts.

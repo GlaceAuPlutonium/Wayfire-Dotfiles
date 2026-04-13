@@ -1,0 +1,1 @@
+return { path = "/home/gap/.config/niri", documents = {["views"]={[1]={["type"]="doc",["active"]=true,["scroll"]={["x"]=0,["y"]=14800.0},["filename"]="/home/gap/.config/noctalia.json",["selection"]={[1]=741,[2]=2,[3]=741,[4]=2},["text"]=false}},["type"]="leaf",["active_view"]=1}, directories = {} }
