@@ -2,16 +2,16 @@
 My personal Wayfire rice dotfiles. Wayfire is a 3D Wayland compositor.
 
 
-**THIS IS A SEPARATE BRANCH FOR MY NIRI SETUP. CHECK MAIN BRANCH FOR WAYFIRE DOTS**
+### **THIS IS A SEPARATE BRANCH FOR MY NIRI SETUP. CHECK MAIN BRANCH FOR WAYFIRE DOTS**
 
 ## **What is this place**
 This is a repo I use to keep track of my progress as I improve my system. Feel free to use the dots if you like them :)
 
-I am currently doing all of that on a Void Linux installation running on a 2015 11.6" Lenovo Yoga, with a Celeron N2840, hence the reason I'm trying to keep this light. 
+This Niri setup is currently being run in a Void Linux installation running on a Lenovo ThinkCentre M715q 10VG, with an AMD PRO A10-9700E (and Radeon R7 iGPU).
 
-This repository isn't only for the dotfiles, I also keep track of what I have to do on a general level on my system (see TODO.md below).
+This repository isn't only for the dotfiles, I also keep track of what I have to do on a general level on my system (see TODO.md below). // need to rewrite
 
-**The files in this repo are designed for my machine, additionnal tinkering may be required to have something that fits your system.** For example, the EWW sidebar is designed to fit in a 1366x768 screen, it might look too small in a 1080p+ screen.
+**The files in this repo are designed for my machine, additionnal tinkering may be required to have something that fits your system.**
 
 ### Quick access
 
@@ -24,28 +24,23 @@ This repository isn't only for the dotfiles, I also keep track of what I have to
 
 ## Main components
 - **Distro** : [Void Linux](https://voidlinux.org/) // Independent, lightweight, systemd-free, musl-compatible, stable rolling-release GNU/Linux distribution based on the XBPS package manager.
-- **WM** : [Wayfire](https://wayfire.org/) // Wayfire is a 3D Wayland compositor.
-- **Bar*** : [Waybar](https://github.com/Alexays/Waybar) // Highly customisable bar for wlroots-based compositors.
-- **Sidebar** : [Elkowar's Wacky Widgets](https://github.com/elkowar/eww) // Cool widget system written in Rust that allows you to make your own widgets.
+- **WM** : [Niri](https://github.com/niri-wm/niri) // Scrollable-tiling Wayland compositor.
+- **Bar** : [Noctalia](https://noctalia.dev/) // A beautiful, minimal desktop shell for Wayland.
 - **Terminal** : [kitty](https://github.com/kovidgoyal/kitty) // Fast, feature-rich, GPU-based terminal.
 - **Shell** : [ZSH](https://www.zsh.org/) // Powerful shell. (sorry the official site is ugly af)
 - **Launcher** : [Wofi](https://github.com/SimplyCEO/wofi) // Launcher/menu program for wlroots-based Wayland compositors.
 - **File Explorer** : [Yazi](https://yazi-rs.github.io/) // Blazing fast, terminal-based file explorer written in Rust.
-- **Notifications** : [Mako](https://github.com/emersion/mako) // Lightweight notification daemon for Wayland.
+- **Notifications** : [Mako](https://github.com/emersion/mako) // Lightweight notification daemon for Wayland.  -  *Currently unused, using Noctalia's notification system.*
 - **Theme** : [TokyoNight](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) // Really nice dark theme for GTK apps with overall purple/dark-blue tints.
 - **Font** : [Caskaydia Cove](https://www.nerdfonts.com/font-downloads) // A fun, monospaced Nerd Font
-
-*The bar is currently being rewritten using [Quickshell](https://quickshell.org/) which gives me a more flexible bar to work with. Currently about 60% done.
-
 
 ## Showcase
 
 Screenshots will be added later.
 
-<ins> **Videos and GIFs showcases are ruled out.**</ins> The machine I'm currently using doesn't have the necessary power (crappy celeron) to record the screen, unless its like 360p, and there's no point in doing that.
+Unlike the Wayfire setup on my laptop, I can actually record my screen. Video showcases will be added later once I manage do to a proper recording without something going wrong lol
 
-
-## Install scripts
+## Install scripts // **need to rewrite this section**
 These scripts are optionnal. Don't blindly run all of them, you probably don't need them.  
 
 [01-install-packages.sh](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/01-install-packages.sh) It installs most of the packages used in this setup. Don't run it unless you want a similar/the exact same environment.
@@ -70,7 +65,7 @@ Feel free to modify the scripts if before running them if you only want specific
 
 ## Important
 
-### Inspiration
+### Inspiration // well not so much anymore
 
 This project originally started from [blueyt's dotfiles](https://github.com/bluebyt/Wayfire-dots), thanks to him for his amazing work.
 
