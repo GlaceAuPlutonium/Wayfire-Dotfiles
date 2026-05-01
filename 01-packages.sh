@@ -31,7 +31,7 @@ fi
 read -p "Install YAZI related components ? [y/n] : " choice
 if [[ "$choice" == "y" ]]; then
   echo "Installing yazi stuff..."
-  sudo xbps-install -S yazi ffmpeg6 7zip jq poppler fd ripgrep fzf zoxide resvg ImageMagick wl-clipboard
+  sudo xbps-install -S yazi ffmpeg6 7zip jq poppler fd ripgrep fzf zoxide resvg ImageMagick wl-clipboard trash-cli
 else
   echo "Skipped yazi stuff installation."
 fi
@@ -58,6 +58,14 @@ if [[ "$choice" == "y" ]]; then
   sudo xbps-install -S nwg-look qt6ct gtk-engine-murrine nerd-fonts-symbols-ttf noto-fonts-ttf noto-fonts-emoji dejavu-fonts-ttf font-awesome wget curl git openssh ntfs-3g udisks2 udiskie 7zip cmatrix asciiquarium
 else
   echo "Skipped other stuff installation."
+fi
+
+read -p "all the remaining random stuff ? [y/n] : " choice
+if [[ "$choice" == "y" ]]; then
+  echo "Installing random stuff..."
+  sudo xbps-install -S sassc rav1e x264 x265 dav1d man-pages wev xdg-user-dirs xdg-utils libinput
+else
+  echo "Skipped random installation."
 fi
 
 echo "Packages installed."
