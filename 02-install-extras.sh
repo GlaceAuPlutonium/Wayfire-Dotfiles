@@ -24,9 +24,14 @@ else
   echo "Skipped icon theme installation."
 fi
 
-
-# Phinger Cursor Theme - Commented for now because last time I tried I didn't work so I gotta check what's wrong
-# wget -cO- https://github.com/phish/phinger-cursors/releases/latest/download/phinger-cursors-variants.tar.bz2 | sudo tar xfj - -C /usr/share/icons
+# Phinger Cursor Theme
+read -p "Install Phinger Cursors Theme ? [y/n] : " choice
+if [[ "$choice" == "y" ]]; then
+  echo "Installing cursor theme..."
+  wget -cO- https://github.com/phisch/phinger-cursors/releases/latest/download/phinger-cursors-variants.tar.bz2 | sudo tar xfj - -C /usr/share/icons
+else
+  echo "Skipped cursor theme installation."
+fi
 
 # Antidote
 read -p "Install Antidote ? [y/n] : " choice
