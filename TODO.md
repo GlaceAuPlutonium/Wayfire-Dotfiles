@@ -46,10 +46,9 @@ If a program isn't using tokyo-night theme, change it
 🎨 Things to check if in the mood or if I have time :
 
 - Look for audio visualiser / music player ie. ncmpcpp with Cava/Xava (where to put it ??). Also check out things like Tauon Music Box, Lollypop or Amberol. But if I do I don't know where tf I'd but it
+- So may need to install Helvum for easier control and stuff
 
 - A system tray could be useful
-
-- PixDecor but check out blueyt's install process
 
 - Get fucking nuts and do that stupid custom animation on bootup (could be easier with quickshell)
 - Check out [this dope stuff](https://github.com/TSM-061/ctOS) and amybe switch to greetd intsead of sddm so i could finally have this cool login animation
@@ -63,15 +62,13 @@ If a program isn't using tokyo-night theme, change it
 - See what cool animation I can do in the Quickshell bar, like battery shakig or extensions or smooth things, whatever see what i can do
 - Glow for battery module ?
 
-- Yeah so ags for the bars (top/side), need to install it (please don't be a fucker and use the astal/ags doc, not agsv1 doc). The point of it is to replace Waybar/EWW under a same app (and allow me to have a reactive topbar apperance when changing workspace). And also could allow me to have cool deploying pannels with like xava or idk could be neat. and what if using wf-shell for top bar ?
-
 - Clipboard manager ie. Clipse, annoying af (or just have a clipboard manager I guess)
 
 - Maybe look for a dedicated music player instead of mpv
 
-- PixDecor wants git master (Void repo is 0.10.1, git release is 0.10.1, master git is 0.11)
+- An audio/music player
 
-- NF or NF-Mono ? (font) (for like kitty) NF = big icons, NFM = smol icons
+- PixDecor wants git master (Void repo is 0.10.1, git release is 0.10.1, master git is 0.11)
 
 - Volume can get way too high (fyi 26478% volume is indeed too loud)
 
