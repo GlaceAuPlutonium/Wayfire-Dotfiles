@@ -70,8 +70,6 @@ If a program isn't using tokyo-night theme, change it
 
 - PixDecor wants git master (Void repo is 0.10.1, git release is 0.10.1, master git is 0.11)
 
-- Volume can get way too high (fyi 26478% volume is indeed too loud)
-
 - Find a better way to manage ~/dotfiles maybe ?
 
 - Check out SwayOSD
@@ -80,7 +78,7 @@ If a program isn't using tokyo-night theme, change it
 
 - Customize bottom (process viewer. its the pretty htop)
 
-- extras install script not working when it comes to Phinger Cursors, see what's going on
+- remake install scripts for Wayfire setup, already done for Niri in niri branch
 
 - I mean that woudd be nice if i could touchscroll in kitty (it looks like I cant)
 
