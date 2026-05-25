@@ -15,8 +15,6 @@
 
 - Emojis not typing in from rofimoji :upside_down_face: Neither with wofi-emoji btw. Tried fcitx5 but adds a crapton of kde dependencies and components so nuh uh
 
-- CAPSLOCK key not working with numbers for some reasons
-
 - Emojis are showing up in Yazi but not Lite-XL
 
 - Clipboard still kinda goofy sometimes wont paste for no fucking reasons
