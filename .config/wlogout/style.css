@@ -43,13 +43,13 @@ button:hover {
 
 button:hover#suspend {
     background-image: image(url("/home/gap/.config/wlogout/icons/suspend-hover.png"), url("/usr/share/wlogout/icons/suspend.png"));
-    border-radius: 50px 50px 50px 5px;
+    border-radius: 45px 45px 45px 5px;
     margin : 5px 5px 5px 5px;
 }
 
 button:hover#logout {
     background-image: image(url("/home/gap/.config/wlogout/icons/logout-hover.png"), url("/usr/share/wlogout/icons/logout.png"));
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 45px 45px 45px 45px;
     margin : 5px 5px 5px 5px;
 }
 
@@ -61,19 +61,19 @@ button:hover#shutdown {
 
 button:hover#reboot {
     background-image: image(url("/home/gap/.config/wlogout/icons/reboot-hover.png"), url("/usr/share/wlogout/icons/reboot.png"));
-    border-radius: 5px 50px 50px 50px;
+    border-radius: 5px 45px 45px 45px;
     margin : 5px 5px 5px 5px;
 }
 
 button:hover#lock {
     background-image: image(url("/home/gap/.config/wlogout/icons/lock-hover.png"), url("/usr/share/wlogout/icons/lock.png"));
-    border-radius: 50px 50px 5px 50px;
+    border-radius: 45px 45px 5px 45px;
     margin : 5px 5px 5px 5px;
 }
 
 button:hover#hibernate {
     background-image: image(url("/home/gap/.config/wlogout/icons/hibernate-hover.png"), url("/usr/share/wlogout/icons/hibernate.png"));
-    border-radius: 50px 5px 50px 50px;
+    border-radius: 45px 5px 45px 45px;
     margin : 5px 5px 5px 5px;
 }
 
@@ -81,7 +81,7 @@ button:hover#hibernate {
 
 #suspend {
     background-image: image(url("/home/gap/.config/wlogout/icons/suspend.png"), url("/usr/share/wlogout/icons/suspend.png"));
-    border-radius: 4px 50px 4px 4px;    
+    border-radius: 4px 45px 4px 4px;    
     margin : 5px 5px 5px 5px;
 }
 
@@ -99,18 +99,18 @@ button:hover#hibernate {
 
 #reboot {
     background-image: image(url("/home/gap/.config/wlogout/icons/reboot.png"), url("/usr/share/wlogout/icons/reboot.png"));
-    border-radius: 4px 4px 50px 4px;    
+    border-radius: 4px 4px 45px 4px;    
     margin : 5px 5px 5px 5px;
 }
 
 #lock {
     background-image: image(url("/home/gap/.config/wlogout/icons/lock.png"), url("/usr/share/wlogout/icons/lock.png"));
-    border-radius: 50px 4px 4px 4px;    
+    border-radius: 45px 4px 4px 4px;    
     margin : 5px 5px 5px 5px;
 }
 
 #hibernate {
     background-image: image(url("/home/gap/.config/wlogout/icons/hibernate.png"), url("/usr/share/wlogout/icons/hibernate.png"));
-    border-radius: 4px 4px 4px 50px;    
+    border-radius: 4px 4px 4px 45px;    
     margin : 5px 5px 5px 5px;
 }
