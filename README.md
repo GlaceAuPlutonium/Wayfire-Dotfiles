@@ -19,8 +19,6 @@ This repository isn't only for the dotfiles, I also keep track of what I have to
 
 [TODO.md](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/TODO.md)
 
-[UPDATES.md](https://github.com/GlaceAuPlutonium/Wayfire-Dotfiles/blob/main/UPDATES.md)
-
 
 ## Main components
 - **Distro** : [Void Linux](https://voidlinux.org/) // Independent, lightweight, systemd-free, musl-compatible, stable rolling-release GNU/Linux distribution based on the XBPS package manager.
