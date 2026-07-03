@@ -8,7 +8,7 @@ echo "Setting up annoying system related things..."
 read -p "Create Noctalia Shell repository ? [y/n] : " choice
 if [[ "$choice" == "y" ]]; then
   echo "Creating Noctalia Shell repository..."
-  echo "repository=https://universalrepo.r1xelelo.workers.dev/void" | sudo tee /etc/xbps.d/10-noctalia.conf
+  echo "repository=https://universalrepository.pages.dev/void" | sudo tee /etc/xbps.d/10-noctalia.conf
 else
   echo "Skipped Noctalia Shell repository creation."
 fi
@@ -16,7 +16,7 @@ read -p "Install Noctalia Shell ? [y/n] : " choice
 if [[ "$choice" == "y" ]]; then
   echo "Installing Noctalia Shell..."
   sudo xbps-install -S
-  sudo xbps-install noctalia-shell
+  sudo xbps-install noctalia
 else
   echo "Skipped Noctalia Shell installation."
 fi
