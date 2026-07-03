@@ -6,8 +6,10 @@ echo "Copying dotfiles..."
 
 mkdir -p ~/.local/share/fonts
 
+mkdir -p ~/Pictures
+
 cp -r .config ~/
-cp -r Wallpapers ~/
+cp -r Wallpapers ~/Pictures
 cp -r .local/share/fonts/CascadiaCode ~/.local/share/fonts/
 
 cp .zshrc ~/
