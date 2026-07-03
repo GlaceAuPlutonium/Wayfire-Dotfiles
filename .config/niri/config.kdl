@@ -254,8 +254,7 @@ environment {
 spawn-at-startup "pipewire"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "udiskie"
-spawn-at-startup "noctalia"
-
+spawn-at-startup "qs" "-c" "noctalia-shell"
 
 
 hotkey-overlay {
@@ -479,7 +478,7 @@ window-rule {
 }
 
 window-rule {
-  match app-id="dev.noctalia.Noctalia.Settings"
+  match app-id="dev.noctalia.noctalia-qs"
   default-column-width { proportion 0.55; }
   open-floating false
 }
@@ -503,7 +502,7 @@ window-rule {
 
 
 layer-rule {
-  match namespace="^noctalia-backdrop"
+  match namespace="^noctalia-overview*"
   place-within-backdrop true
 }
 
