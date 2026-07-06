@@ -8,7 +8,7 @@ echo "Setting up annoying system related things..."
 read -p "Create Noctalia Shell repository ? [y/n] : " choice
 if [[ "$choice" == "y" ]]; then
   echo "Creating Noctalia Shell repository..."
-  echo "repository=https://universalrepository.pages.dev/void" | sudo tee /etc/xbps.d/10-noctalia.conf
+  echo "repository=https://repo.voiders.dev/void" | sudo tee /etc/xbps.d/10-voiders-community.conf
 else
   echo "Skipped Noctalia Shell repository creation."
 fi
